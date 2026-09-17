@@ -76,7 +76,7 @@ export default function App() {
   }, []);
 
   const handleCopyReferralNote = () => {
-    const text = `Recommending fellow alum [Zhang] for the L4 Backend role. Strong distributed systems background from CMU with hands-on C++ storage engine contributions. Meets all core team requirements via NACUAA Alum verification.`;
+    const text = `Recommending fellow alum [Zhang] for the L4 Backend role. Strong distributed systems background from CMU with hands-on C++ storage engine contributions. Meets all core team requirements via NACUAA / ZJUAANC Alum verification.`;
     navigator.clipboard.writeText(text);
     setCopiedText(true);
     setTimeout(() => setCopiedText(false), 2000);
@@ -110,7 +110,7 @@ export default function App() {
         <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">
           Closed Beta
         </span>
-        <span>VI AI 职引首期名企校友内测启动 · 严禁任何形式内推买卖，真实校友纯公益互助</span>
+        <span>VI AI 职引首期名企内推启动 · NACUAA × ZJUAANC (浙大北加州校友会) 联合发起 · 纯公益互助</span>
         <span className="hidden sm:inline text-slate-500">|</span>
         <span className="hidden sm:inline text-slate-400 font-mono text-[11px]">短链: c.vi.fyi (求职) · r.vi.fyi (引路人)</span>
       </div>
@@ -130,7 +130,7 @@ export default function App() {
                   ViCareer
                 </span>
               </div>
-              <p className="text-[10px] text-slate-400">北美高校校友职业与内推协作平台 · NACUAA 联合发起</p>
+              <p className="text-[10px] text-slate-400">北美高校校友职业与内推协作平台 · NACUAA × ZJUAANC 联合发起</p>
             </div>
           </div>
 
@@ -195,7 +195,7 @@ export default function App() {
             <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
             <span>以校友信任为基石 · 以职场内推为桥梁</span>
             <span className="text-slate-600">|</span>
-            <span className="text-slate-400 font-medium">VI AI × NACUAA 北美高校联盟</span>
+            <span className="text-slate-400 font-medium">VI AI × NACUAA 北美高校联盟 × ZJUAANC 浙大北加州校友会</span>
           </div>
 
           {/* Headline */}
@@ -368,7 +368,7 @@ export default function App() {
                 </div>
 
                 <div className="p-3 rounded-xl bg-[#070e1e] border border-slate-800 text-xs font-mono text-indigo-200 leading-relaxed">
-                  "Recommending fellow alum [Zhang] for the L4 Backend role. Strong distributed systems background from CMU with hands-on C++ storage engine contributions. Meets all core team requirements via NACUAA Alum verification."
+                  "Recommending fellow alum [Zhang] for the L4 Backend role. Strong distributed systems background from CMU with hands-on C++ storage engine contributions. Meets all core team requirements via NACUAA / ZJUAANC Alum verification."
                 </div>
 
                 <div className="flex flex-wrap items-center gap-2 pt-1">
@@ -402,7 +402,7 @@ export default function App() {
                 校友经历客观佐证 · 智能队列优先加权
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                彻底拒绝死板关卡。<strong>母校认证即享全域申请资格</strong>（限额2份活动申请保护供给侧）；在职校友出具<strong>【客观项目经历佐证】</strong>即可激活【高信度置顶队列】；分会理事会工单直通，免除连坐，杜绝冷启动死锁。
+                彻底拒绝死板关卡。<strong>母校认证即享全域申请资格</strong>（限额2份活动申请保护供给侧）；在职校友出具<strong>【客观项目经历佐证】</strong>即可激活【高信度置顶队列】；NACUAA / ZJUAANC 校友会工单直通，免除连坐，杜绝冷启动死锁。
               </p>
             </div>
 
@@ -431,10 +431,10 @@ export default function App() {
               <div className="p-5 rounded-2xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
                 <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm">
                   <Award className="w-4 h-4 text-emerald-400" />
-                  <span>分会定额工单 · 官方核验同权直通</span>
+                  <span>校友会定额工单 · 官方核验同权直通</span>
                 </div>
                 <p className="text-slate-400 leading-relaxed">
-                  初来北美暂无大厂熟人？提交标准化作品集工单，由<strong>分会职场干事出具官方客观核验章（1=1同权）</strong>，免除会长私信拥堵。
+                  初来北美暂无大厂熟人？提交标准化作品集工单，由 <strong>NACUAA / ZJUAANC 校友会职场干事出具官方客观核验章（1=1同权）</strong>，免除会长私信拥堵。
                 </p>
               </div>
             </div>
@@ -512,22 +512,22 @@ export default function App() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2.5">
                         <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-xs border border-emerald-400/40">
-                          盟
+                          联
                         </div>
                         <div>
                           <div className="flex items-center gap-2">
-                            <strong className="text-white text-xs">NACUAA 北美高校联盟 · 分会职场工单官方核验章</strong>
+                            <strong className="text-white text-xs">NACUAA × ZJUAANC · 校友会职场工单官方核验章</strong>
                             <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-500/30">
                               书面工单审核通过 (1=1 同权)
                             </span>
                           </div>
-                          <span className="text-[11px] text-slate-400">核验人：分会职场干事 (大华府分会理事会备案)</span>
+                          <span className="text-[11px] text-slate-400">核验人：校友会职场干事 (NACUAA / 浙大北加州校友会联合备案)</span>
                         </div>
                       </div>
                       <span className="text-[10px] text-emerald-400 font-mono">2026-09-17 备案</span>
                     </div>
                     <p className="text-xs text-slate-300 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800/80">
-                      "已审核该校友毕业证书与 GitHub 开源分布式存储项目仓库。学历与核心代码贡献事实清晰真实，特此授予分会官方经历核验佐证章。"
+                      "已审核该校友毕业证书与 GitHub 开源分布式存储项目仓库。学历与核心代码贡献事实清晰真实，特此授予校友会官方经历核验佐证章。"
                     </p>
                   </div>
                 ) : vouchCount === 0 ? (
@@ -611,7 +611,7 @@ export default function App() {
                   }`}
                 >
                   <Zap className="w-3.5 h-3.5 text-amber-400" />
-                  <span>{isFastTrack ? '已启用分会工单核验 (1=1 同权)' : '启用【分会工单直通】(1=1 同权)'}</span>
+                  <span>{isFastTrack ? '已启用校友会工单核验 (1=1 同权)' : '启用【校友会工单直通】(1=1 同权)'}</span>
                 </button>
 
                 <button
@@ -1008,7 +1008,7 @@ export default function App() {
                           className="w-4 h-4 mt-0.5 rounded border-slate-700 text-cyan-500 focus:ring-0 bg-slate-900"
                         />
                         <span className="text-[11px] text-slate-300">
-                          初来北美暂无学长人脉，申请<strong>【联盟理事直通车】</strong>审核（会长1票抵扣3票）
+                          初来北美暂无学长人脉，申请<strong>【NACUAA / ZJUAANC 校友会工单直通】</strong>经历核验（干事官方核验 1=1 同权）
                         </span>
                       </label>
                     </div>
@@ -1096,7 +1096,7 @@ export default function App() {
               VI
             </div>
             <span className="text-slate-300 font-semibold">VI AI 职引 · ViCareer</span>
-            <span>© 2026 VI AI Foundation & NACUAA. All rights reserved.</span>
+            <span>© 2026 VI AI Foundation, NACUAA & ZJUAANC. All rights reserved.</span>
           </div>
 
           <div className="flex items-center gap-4 text-[11px] font-mono">
@@ -1137,7 +1137,7 @@ export default function App() {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-white">VI AI 职引 · 校友项目经历佐证邀请</div>
-                    <div className="text-[10px] text-slate-400">NACUAA 北美高校联盟认证生态</div>
+                    <div className="text-[10px] text-slate-400">NACUAA × ZJUAANC (浙大北加州校友会) 联合认证生态</div>
                   </div>
                 </div>
                 <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.5 rounded font-mono">
