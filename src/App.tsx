@@ -111,7 +111,7 @@ export default function App() {
           Closed Beta
         </span>
         <span>
-          VI AI 职引首期名企内推 · 唯爱AI公益基金会 × 北美高校联盟北加州分会 ×{' '}
+          ViVouch 校友举荐首期 · 唯爱AI公益基金会 × 北美高校联盟北加州分会 ×{' '}
           <a
             href="https://nacuaa.ai/en"
             target="_blank"
@@ -123,7 +123,7 @@ export default function App() {
           × 北美浙江大学校友会北卡分会 联合发起 · 纯公益互助
         </span>
         <span className="hidden sm:inline text-slate-500">|</span>
-        <span className="hidden sm:inline text-slate-400 font-mono text-[11px]">短链: c.vi.fyi (求职) · r.vi.fyi (引路人)</span>
+        <span className="hidden sm:inline text-slate-400 font-mono text-[11px]">短链: c.vi.fyi (求职直通) · v.vi.fyi / r.vi.fyi (举荐协作)</span>
       </div>
 
       {/* Main Navigation Header */}
@@ -136,13 +136,13 @@ export default function App() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-lg font-black tracking-tight text-white">VI AI 职引</span>
-                <span className="text-[10px] bg-slate-800 text-indigo-300 border border-slate-700 px-1.5 py-0.5 rounded font-mono">
-                  ViCareer
+                <span className="text-lg font-black tracking-tight text-white">ViVouch 校友举荐</span>
+                <span className="text-[10px] bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 px-1.5 py-0.5 rounded font-mono font-bold">
+                  ViVouch
                 </span>
               </div>
               <p className="text-[10px] text-slate-400">
-                北美高校校友职业与内推协作平台 · VI AI Foundation × NACUAA NorCal ×{' '}
+                北美高校校友具名举荐与内推协作平台 · VI AI Foundation × NACUAA NorCal ×{' '}
                 <a
                   href="https://nacuaa.ai/en"
                   target="_blank"
@@ -215,7 +215,7 @@ export default function App() {
           {/* Badges */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 text-xs text-indigo-300 backdrop-blur shadow-lg">
             <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-            <span>以校友信任为基石 · 以职场内推为桥梁</span>
+            <span>以校友信任为基石 · 以具名举荐为桥梁</span>
             <span className="text-slate-600">|</span>
             <span className="text-slate-400 font-medium">
               唯爱AI公益基金会 × 北美高校联盟北加州分会 ×{' '}
@@ -234,15 +234,28 @@ export default function App() {
           {/* Headline */}
           <div className="space-y-4 max-w-3xl mx-auto">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
-              拒绝简历海投石沉大海<br />
+              有校友具名，才叫举荐<br />
               <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
-                名企校友 1 对 1 纯净直推
+                学长具名 · 拒绝海投 · 1 对 1 纯净直推
               </span>
             </h1>
             <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              汇聚 Google、Meta、OpenAI、微软、Apple、量化对冲及各领域北美在职校友。
-              替内推人生成 <strong>150 字 Workday 推荐评语</strong>，按 <strong>OPT / H-1B 签证合规分诊</strong>，全程五态透明跟踪。
+              让真实的了解，连接下一次机会。汇聚 Google、Meta、OpenAI、微软、Apple 及量化名企在职校友。<br />
+              <span className="text-indigo-300 font-medium">15 分钟短效预签名 · 简历绝不用于模型预训练</span> · 替举荐人生成 150 字 Workday 推荐评语。
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400 pt-1">
+              <span className="inline-flex items-center gap-1 text-emerald-400 font-medium">
+                <CheckCircle2 className="w-3.5 h-3.5" /> 完成校友认证即可参与（无熟人也可申请）
+              </span>
+              <span className="text-slate-600 hidden sm:inline">·</span>
+              <span className="inline-flex items-center gap-1 text-cyan-300 font-medium">
+                <Shield className="w-3.5 h-3.5" /> 15 秒客观经历确认（非连带人格担保）
+              </span>
+              <span className="text-slate-600 hidden sm:inline">·</span>
+              <span className="inline-flex items-center gap-1 text-purple-300 font-medium">
+                <Sparkles className="w-3.5 h-3.5" /> Vouched by alumni. Submitted by them.
+              </span>
+            </div>
           </div>
 
           {/* Dual CTAs */}
@@ -253,7 +266,7 @@ export default function App() {
               className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xl shadow-indigo-500/25 transition-all active:scale-95"
             >
               <Briefcase className="w-4 h-4" />
-              <span>在职引路人登记 (首批 30 席)</span>
+              <span>在职引路人 / 举荐人登记 (首批 30 席)</span>
             </a>
 
             <a
@@ -262,7 +275,7 @@ export default function App() {
               className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-200 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95"
             >
               <Users className="w-4 h-4 text-cyan-400" />
-              <span>求职校友排队报名</span>
+              <span>求职校友排队报名 (申请举荐)</span>
             </a>
           </div>
 
@@ -745,7 +758,7 @@ export default function App() {
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white">首批封闭内测登记通道</h2>
               <p className="text-xs sm:text-sm text-slate-400">
-                第一期仅招募 30 位名企在职引路人，以及按配额开放同等规模的求职校友。
+                第一期仅招募 30 位名企在职引路人/举荐人，以及按配额开放同等规模的求职校友。
               </p>
             </div>
 
@@ -760,7 +773,7 @@ export default function App() {
                 }`}
               >
                 <Briefcase className="w-3.5 h-3.5" />
-                <span>我是在职校友 (提供内推 · r.vi.fyi)</span>
+                <span>我是在职校友 (提供举荐 · v.vi.fyi / r.vi.fyi)</span>
               </button>
 
               <button
@@ -772,7 +785,7 @@ export default function App() {
                 }`}
               >
                 <GraduationCap className="w-3.5 h-3.5" />
-                <span>我是求职校友 (预约排队 · c.vi.fyi)</span>
+                <span>我是求职校友 (申请举荐 · c.vi.fyi)</span>
               </button>
             </div>
 
@@ -1113,7 +1126,7 @@ export default function App() {
             <div className="space-y-1.5 text-xs text-slate-400 leading-relaxed border-t border-slate-800/80 pt-3">
               <p>
                 <strong>公益互助与免责原则：</strong>
-                VI AI 职引（ViCareer）为非营利性校友互助协作工具，对校友永久免费，严禁任何买卖内推码或付费优先交易。平台仅提供校友引见与材料整理工具，不保证任何提交或面试录用结果，亦不提供移民法律意见。
+                ViVouch 校友举荐（career.weiai.ai）为非营利性校友互助协作工具，对校友永久免费，严禁任何买卖内推码或付费优先交易。平台仅提供校友具名举荐与材料整理工具，不保证任何提交或面试录用结果，亦不提供移民法律意见。举荐系校友基于客观经历之独立见证，不构成任何连带担保。
               </p>
             </div>
           </div>
@@ -1128,7 +1141,7 @@ export default function App() {
             <div className="w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">
               VI
             </div>
-            <span className="text-slate-300 font-semibold">VI AI 职引 · ViCareer</span>
+            <span className="text-slate-300 font-semibold">ViVouch 校友举荐 · career.weiai.ai</span>
             <span>
               © 2026 VI AI Foundation, NACUAA NorCal,{' '}
               <a
@@ -1148,7 +1161,7 @@ export default function App() {
             <span>·</span>
             <span>c.vi.fyi (Seekers)</span>
             <span>·</span>
-            <span>r.vi.fyi (Referrers)</span>
+            <span>v.vi.fyi / r.vi.fyi (Referrers)</span>
           </div>
         </div>
       </footer>
@@ -1180,7 +1193,7 @@ export default function App() {
                     VI
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-white">VI AI 职引 · 校友项目经历佐证邀请</div>
+                    <div className="text-xs font-bold text-white">ViVouch 校友举荐 · 校友经历佐证邀请</div>
                     <div className="text-[10px] text-slate-400">
                       北美高校联盟北加州分会 × 北美高校联盟AI创业公益俱乐部 × 北美浙江大学校友会北卡分会 联合认证生态
                     </div>
@@ -1204,14 +1217,14 @@ export default function App() {
               </div>
 
               <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-xs text-slate-300 italic">
-                “学长学姐好！我正在申请 VI AI 职引的校友内推协作通道，诚邀曾共同做过项目或共事的前辈为我出具一份客观经历佐证（仅需确认事实，无连带风险），非常感谢您的提携！”
+                “学长学姐好！我正在申请 ViVouch 校友举荐协作通道，诚邀曾共同做过项目或共事的前辈为我出具一份客观经历佐证（仅需确认事实，无连带风险），非常感谢您的提携！”
               </div>
 
               <div className="text-[11px] text-slate-400 space-y-1 bg-slate-900/60 p-2.5 rounded-xl">
-                <div className="text-slate-300 font-semibold">学长学姐微信打开可一键确认客观事实：</div>
-                <div>✓ 共同参与过实际系统/项目研发</div>
-                <div>✓ 代码与工程素养真实严谨</div>
-                <div>✓ 建议内推人优先阅览此简历包</div>
+                <div className="text-slate-300 font-semibold">学长学姐微信打开可勾选三档轻量举荐（15秒即成，无连带担保）：</div>
+                <div>① 确认曾与 TA 共同共事/做过项目 (核实经历)</div>
+                <div>② 认可 TA 的技术深度与工程代码 (专业背书)</div>
+                <div>③ 愿意考虑直推至自己组内/部门 (直推直达)</div>
               </div>
 
               <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between text-xs font-mono text-cyan-300">

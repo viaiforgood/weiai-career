@@ -1,7 +1,7 @@
 {
   "name": "weiai-career",
   "version": "1.0.0",
-  "description": "VI AI 职引 (ViCareer) - 北美高校校友职业与求职内推平台 by VI AI Foundation and NACUAA.",
+  "description": "ViVouch 校友举荐 - 北美高校校友具名举荐与内推协作平台 by VI AI Foundation, NACUAA NorCal, NACUAA AI Venture and Impact Club & ZJUAA NC.",
   "homepage": "https://career.weiai.ai",
   "type": "module",
   "scripts": {
