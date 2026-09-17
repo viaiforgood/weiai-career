@@ -1032,23 +1032,55 @@ export default function App() {
           <div className="p-6 rounded-3xl bg-slate-950/80 border border-slate-800 space-y-4">
             <div className="flex items-center gap-2 text-rose-400 font-bold text-sm">
               <AlertCircle className="w-4 h-4 shrink-0" />
-              <span>严正合规底线与法律声明 (Legal Disclaimers)</span>
+              <span>严正合规底线、数据安全与隐私主权 (Security, Privacy & Compliance)</span>
             </div>
 
-            <div className="space-y-2 text-xs text-slate-400 leading-relaxed">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+              <div className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1">
+                <div className="flex items-center gap-1.5 font-bold text-indigo-300">
+                  <Shield className="w-3.5 h-3.5 text-indigo-400" />
+                  <span>数据库多级容灾与异地备份</span>
+                </div>
+                <p className="text-slate-400 text-[11px] leading-relaxed">
+                  结构化数据连续 WAL 归档支持 30 天任意时间点恢复（PITR）；每日凌晨全量加密快照异地跨云归档（AWS S3 Glacier 冷备），定期自动化灾备演练。
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1">
+                <div className="flex items-center gap-1.5 font-bold text-cyan-300">
+                  <Lock className="w-3.5 h-3.5 text-cyan-400" />
+                  <span>简历 15 分钟短效预签名授权</span>
+                </div>
+                <p className="text-slate-400 text-[11px] leading-relaxed">
+                  简历存放于私有 Cloudflare R2 加密存储池，仅对授权在职内推人生成 15 分钟临时单次预签名链接，绝无公开静态 URL，防御网络抓取与遍历。
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1">
+                <div className="flex items-center gap-1.5 font-bold text-emerald-300">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>严禁 AI 大模型预训练语料</span>
+                </div>
+                <p className="text-slate-400 text-[11px] leading-relaxed">
+                  AI 分诊与推荐语生成均签署商业级 Zero-Data-Retention SLA 协议。求职者简历与项目经历数据<strong>绝不流入公共大模型预训练语料库</strong>。
+                </p>
+              </div>
+
+              <div className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1">
+                <div className="flex items-center gap-1.5 font-bold text-amber-300">
+                  <Zap className="w-3.5 h-3.5 text-amber-400" />
+                  <span>数据被遗忘权与一键销毁</span>
+                </div>
+                <p className="text-slate-400 text-[11px] leading-relaxed">
+                  求职校友享有完整数据主权，可随时在后台一键撤回授权或物理抹除简历档案；系统严格遵守 EEOC 反歧视规范，底表禁止采集国籍、种族等受保护特征。
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-1.5 text-xs text-slate-400 leading-relaxed border-t border-slate-800/80 pt-3">
               <p>
-                <strong>1. 严禁任何形式的对价与内推买卖：</strong>
-                VI AI 职引（ViCareer）为非营利性校友互助协作工具，对校友永久免费。平台严禁买卖内部推荐资格、付费优先或中介分成。雇主提供的官方招聘奖金属于在职内推人本人，平台不设抽成，不触碰金钱。
-              </p>
-              <p>
-                <strong>2. 免责声明三原则：</strong>
-                ① 平台不保证任何内推必定成功，不暗示或承诺面试与录取结果；
-                ② 平台不是职业介绍所（Employment Agency），不参与任何雇佣决策；
-                ③ 平台提供之 Work Auth 标签仅供匹配参考，不构成任何移民与签证法律意见。
-              </p>
-              <p>
-                <strong>3. 简历隐私主权：</strong>
-                校友简历存放于私有 Cloudflare R2 加密存储，仅按需向具体坑位生成 15 分钟短效访问授权，未经授权绝不对公网公开，严禁未经许可作为 AI 大模型预训练语料。
+                <strong>公益互助与免责原则：</strong>
+                VI AI 职引（ViCareer）为非营利性校友互助协作工具，对校友永久免费，严禁任何买卖内推码或付费优先交易。平台仅提供校友引见与材料整理工具，不保证任何提交或面试录用结果，亦不提供移民法律意见。
               </p>
             </div>
           </div>
