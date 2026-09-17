@@ -110,7 +110,7 @@ export default function App() {
         <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">
           Closed Beta
         </span>
-        <span>VI AI 职引首期名企内推启动 · NACUAA × ZJUAANC (浙大北加州校友会) 联合发起 · 纯公益互助</span>
+        <span>VI AI 职引首期名企内推启动 · NACUAA × ZJUAANC (北卡浙大校友会) 联合发起 · 纯公益互助</span>
         <span className="hidden sm:inline text-slate-500">|</span>
         <span className="hidden sm:inline text-slate-400 font-mono text-[11px]">短链: c.vi.fyi (求职) · r.vi.fyi (引路人)</span>
       </div>
@@ -195,7 +195,7 @@ export default function App() {
             <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
             <span>以校友信任为基石 · 以职场内推为桥梁</span>
             <span className="text-slate-600">|</span>
-            <span className="text-slate-400 font-medium">VI AI × NACUAA 北美高校联盟 × ZJUAANC 浙大北加州校友会</span>
+            <span className="text-slate-400 font-medium">VI AI × NACUAA 北美高校联盟 × ZJUAANC 北卡浙大校友会</span>
           </div>
 
           {/* Headline */}
@@ -521,7 +521,7 @@ export default function App() {
                               书面工单审核通过 (1=1 同权)
                             </span>
                           </div>
-                          <span className="text-[11px] text-slate-400">核验人：校友会职场干事 (NACUAA / 浙大北加州校友会联合备案)</span>
+                          <span className="text-[11px] text-slate-400">核验人：校友会职场干事 (NACUAA / 北卡浙大校友会联合备案)</span>
                         </div>
                       </div>
                       <span className="text-[10px] text-emerald-400 font-mono">2026-09-17 备案</span>
@@ -1137,7 +1137,7 @@ export default function App() {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-white">VI AI 职引 · 校友项目经历佐证邀请</div>
-                    <div className="text-[10px] text-slate-400">NACUAA × ZJUAANC (浙大北加州校友会) 联合认证生态</div>
+                    <div className="text-[10px] text-slate-400">NACUAA × ZJUAANC (北卡浙大校友会) 联合认证生态</div>
                   </div>
                 </div>
                 <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.5 rounded font-mono">
