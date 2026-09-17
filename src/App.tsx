@@ -388,7 +388,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Section 2.5: 3-Alumni Web-of-Trust Mechanism */}
+        {/* Section 2.5: Web-of-Trust Lite: Experience Proof & Queue Prioritization */}
         <section id="web-of-trust" className="py-14 bg-gradient-to-b from-[#060e22] via-[#08122c] to-[#050b18] border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             
@@ -396,13 +396,13 @@ export default function App() {
             <div className="text-center space-y-3">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
                 <Shield className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Join by Referral · 3-Alumni Web-of-Trust</span>
+                <span>Web-of-Trust Lite · 校友经历佐证与队列加权</span>
               </div>
               <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-                校友三度背书信任网 · 破解冷启动死锁
+                校友经历客观佐证 · 智能队列优先加权
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                在职校友<strong>企业邮箱免背书秒进</strong>并获封【创世背书人】；求职校友需<strong>3位校友信用背书</strong>阶梯解锁顶级大厂；特别开通<strong>【北美高校联盟理事直通车】</strong>1票抵3票，杜绝劣质海投，防止新人孤立。
+                彻底拒绝死板关卡。<strong>母校认证即享全域申请资格</strong>（限额2份活动申请保护供给侧）；在职校友出具<strong>【客观项目经历佐证】</strong>即可激活【高信度置顶队列】；分会理事会工单直通，免除连坐，杜绝冷启动死锁。
               </p>
             </div>
 
@@ -410,31 +410,31 @@ export default function App() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
               <div className="p-5 rounded-2xl bg-slate-900/80 border border-indigo-500/30 space-y-2">
                 <div className="flex items-center gap-2 text-indigo-300 font-bold text-sm">
-                  <Zap className="w-4 h-4 text-amber-400" />
-                  <span>在职引路人 · 零门槛秒进</span>
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <span>保底申请权 · 不设公司阶梯门槛</span>
                 </div>
                 <p className="text-slate-400 leading-relaxed">
-                  验证公司邮箱（@google, @meta等）即刻入驻，自动成为<strong>创世背书人</strong>，每月拥有 3 张信用背书券，无需找人背书。
+                  通过北美高校校友身份认证即可申请全平台开放岗位。严格限制<strong>每人同时最多2份活动中申请</strong>，从源头防止盲目海投。
                 </p>
               </div>
 
               <div className="p-5 rounded-2xl bg-slate-900/80 border border-cyan-500/30 space-y-2">
                 <div className="flex items-center gap-2 text-cyan-300 font-bold text-sm">
-                  <GraduationCap className="w-4 h-4 text-cyan-400" />
-                  <span>求职校友 · 四阶渐进式解锁</span>
+                  <Zap className="w-4 h-4 text-amber-400" />
+                  <span>客观经历佐证 · 队列置顶加权</span>
                 </div>
                 <p className="text-slate-400 leading-relaxed">
-                  0票体验AI分诊 ➔ 1票解锁Coffee Chat ➔ 2票解锁独角兽 ➔ <strong>3票完全解锁 Tier-1 顶级大厂 1v1 纯净直推</strong>。
+                  获得在职学长确认真实项目与协作事实，直接进入内推人<strong>置顶优先阅览队列</strong>，并附带可溯源经历证据，大幅提升回复率。
                 </p>
               </div>
 
               <div className="p-5 rounded-2xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
                 <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm">
                   <Award className="w-4 h-4 text-emerald-400" />
-                  <span>破局冷启动 · 联盟理事直通车</span>
+                  <span>分会定额工单 · 官方核验同权直通</span>
                 </div>
                 <p className="text-slate-400 leading-relaxed">
-                  初来北美无工业界人脉？<strong>1 位 NACUAA 联盟理事或校友会会长官方背书，直接等效抵扣 3 个常规背书</strong>，即刻满血点亮！
+                  初来北美暂无大厂熟人？提交标准化作品集工单，由<strong>分会职场干事出具官方客观核验章（1=1同权）</strong>，免除会长私信拥堵。
                 </p>
               </div>
             </div>
@@ -455,61 +455,56 @@ export default function App() {
                         CMU '24 MS · 清华 '18 BS
                       </span>
                     </div>
-                    <p className="text-xs text-slate-400 mt-0.5">目标意向：Google Core Infra · L4 Backend Engineer</p>
+                    <p className="text-xs text-slate-400 mt-0.5">目标意向：Google Core Infra · L4 Backend Engineer (可直接申请)</p>
                   </div>
                 </div>
 
                 {/* Status Indicator */}
                 <div className="flex items-center gap-2">
                   <div className="text-right">
-                    <div className="text-xs text-slate-400">当前背书累积</div>
+                    <div className="text-xs text-slate-400">当前经历佐证</div>
                     <div className="text-base font-black font-mono text-cyan-300">
-                      {isFastTrack ? '3 / 3 (理事特批)' : `${vouchCount} / 3 票`}
+                      {isFastTrack ? '分会官方工单核验' : `${vouchCount} 项客观佐证`}
                     </div>
                   </div>
                   <div className={`px-3 py-1.5 rounded-xl text-xs font-bold border ${
-                    (vouchCount >= 3 || isFastTrack)
+                    (vouchCount >= 2 || isFastTrack)
                       ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
-                      : vouchCount === 2
-                      ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40'
                       : vouchCount === 1
                       ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
-                      : 'bg-slate-800 text-slate-400 border-slate-700'
+                      : 'bg-slate-800 text-slate-300 border-slate-700'
                   }`}>
-                    {(vouchCount >= 3 || isFastTrack)
-                      ? '🌟 Tier-1 大厂权限已满血解锁'
-                      : vouchCount === 2
-                      ? '中型名企/独角兽已解锁'
+                    {(vouchCount >= 2 || isFastTrack)
+                      ? '🌟 置顶推荐队列 (多源经历已佐证)'
                       : vouchCount === 1
-                      ? 'Coffee Chat 已解锁'
-                      : '游客态 (仅限基础工具)'}
+                      ? '★ 优先处理队列 (单项佐证已确认)'
+                      : '标准排队队列 (已拥有申请资格)'}
                   </div>
                 </div>
               </div>
 
-              {/* Progress Stepper Visualizer */}
+              {/* Priority Queue Visualizer */}
               <div className="space-y-2">
                 <div className="w-full bg-slate-950 h-3 rounded-full overflow-hidden border border-slate-800 p-0.5">
                   <div
                     className="h-full rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-emerald-400 transition-all duration-500"
                     style={{
-                      width: isFastTrack ? '100%' : vouchCount === 0 ? '10%' : vouchCount === 1 ? '38%' : vouchCount === 2 ? '72%' : '100%'
+                      width: isFastTrack ? '100%' : vouchCount === 0 ? '25%' : vouchCount === 1 ? '60%' : '100%'
                     }}
                   />
                 </div>
-                <div className="grid grid-cols-4 text-[10px] text-center font-mono">
-                  <span className={vouchCount >= 0 ? 'text-slate-300 font-bold' : 'text-slate-600'}>0票 基础认证</span>
-                  <span className={(vouchCount >= 1 || isFastTrack) ? 'text-cyan-300 font-bold' : 'text-slate-600'}>1票 CoffeeChat</span>
-                  <span className={(vouchCount >= 2 || isFastTrack) ? 'text-indigo-300 font-bold' : 'text-slate-600'}>2票 独角兽内推</span>
-                  <span className={(vouchCount >= 3 || isFastTrack) ? 'text-emerald-400 font-bold' : 'text-slate-600'}>3票 Tier-1大厂</span>
+                <div className="grid grid-cols-3 text-[10px] text-center font-mono">
+                  <span className={vouchCount >= 0 ? 'text-slate-300 font-bold' : 'text-slate-600'}>标准申请队列 (基础入驻)</span>
+                  <span className={(vouchCount >= 1 || isFastTrack) ? 'text-cyan-300 font-bold' : 'text-slate-600'}>优先阅览队列 (1项经历佐证)</span>
+                  <span className={(vouchCount >= 2 || isFastTrack) ? 'text-emerald-400 font-bold' : 'text-slate-600'}>置顶推荐队列 (2项佐证/分会核验)</span>
                 </div>
               </div>
 
               {/* Endorsement Feed (Dynamic) */}
               <div className="space-y-3">
                 <div className="text-xs font-bold text-slate-300 flex items-center justify-between">
-                  <span>已点亮背书清单 ({isFastTrack ? '1位理事官方背书' : `${vouchCount} 位校友`})</span>
-                  <span className="text-[11px] text-slate-500">每位在职校友每月限量3张背书券 · 连带信用惩戒</span>
+                  <span>已绑定的客观经历证明 ({isFastTrack ? '分会官方工单核验' : `${vouchCount} 项`})</span>
+                  <span className="text-[11px] text-slate-500">仅确认证明人了解的客观事实 · 不承担连带责任</span>
                 </div>
 
                 {isFastTrack ? (
@@ -521,25 +516,25 @@ export default function App() {
                         </div>
                         <div>
                           <div className="flex items-center gap-2">
-                            <strong className="text-white text-xs">NACUAA 北美高校联盟 · 大纽约校友会理事会</strong>
+                            <strong className="text-white text-xs">NACUAA 北美高校联盟 · 分会职场工单官方核验章</strong>
                             <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-500/30">
-                              会长亲审 · 直通车抵扣 3 票
+                              书面工单审核通过 (1=1 同权)
                             </span>
                           </div>
-                          <span className="text-[11px] text-slate-400">背书人：陈会长 (纽约大学校友会理事长 / 资深总监)</span>
+                          <span className="text-[11px] text-slate-400">核验人：分会职场干事 (大华府分会理事会备案)</span>
                         </div>
                       </div>
-                      <span className="text-[10px] text-emerald-400 font-mono">2026-09-17 官方特批</span>
+                      <span className="text-[10px] text-emerald-400 font-mono">2026-09-17 备案</span>
                     </div>
                     <p className="text-xs text-slate-300 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800/80">
-                      "该校友通过校友会实名认证与作品集复核，学术经历严谨，编程基础优良。经会长会合议，特别启用联盟理事直通车点亮全站 Tier-1 直推资格！"
+                      "已审核该校友毕业证书与 GitHub 开源分布式存储项目仓库。学历与核心代码贡献事实清晰真实，特此授予分会官方经历核验佐证章。"
                     </p>
                   </div>
                 ) : vouchCount === 0 ? (
                   <div className="p-6 rounded-2xl bg-slate-950/60 border border-dashed border-slate-800 text-center space-y-2">
-                    <UserCheck className="w-8 h-8 text-slate-600 mx-auto" />
-                    <p className="text-xs text-slate-400">目前暂无校友背书，处于基础认证阶段（可免费使用 AI 分诊诊断与 LCA 签证查询）</p>
-                    <p className="text-[11px] text-slate-500">请点击下方按钮模拟获得学长背书，或点击“生成专属求背书卡片”分享给学长学姐！</p>
+                    <UserCheck className="w-8 h-8 text-slate-500 mx-auto" />
+                    <p className="text-xs text-slate-300">候选人已完成母校认证，当前在【标准申请队列】中正常排队（无需凑齐多票亦可投递）</p>
+                    <p className="text-[11px] text-slate-500">如需在内推人清单中获得【优先队列置顶】，可邀请共事过的学长出具项目经历佐证，或申请分会工单！</p>
                   </div>
                 ) : (
                   <div className="space-y-2.5">
@@ -552,16 +547,16 @@ export default function App() {
                             </div>
                             <span className="text-white text-xs font-bold">李校友 · Google Core Infra Tech Lead (清华 15 级)</span>
                             <span className="text-[10px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/30">
-                              大厂在职创世背书人
+                              清华本科项目合作者
                             </span>
                           </div>
-                          <span className="text-[10px] text-slate-500 font-mono">2026-09-15 认证</span>
+                          <span className="text-[10px] text-slate-500 font-mono">2026-09-15 确认</span>
                         </div>
                         <div className="flex items-center gap-1.5 text-[10px] text-emerald-400">
-                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 代码功底扎实</span>
-                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 推荐推本组</span>
+                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 共同完成 KV 存储引擎研发</span>
+                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 代码严谨度过硬</span>
                         </div>
-                        <p className="text-xs text-slate-300">"清华本科同系学弟，分布式存储课程设计与 GitHub 代码均很扎实，值得信赖。"</p>
+                        <p className="text-xs text-slate-300">"我和张同学在清华共同做过分布式存储课程设计，其 GitHub 模块二次开发非常扎实，客观属实。"</p>
                       </div>
                     )}
 
@@ -574,38 +569,16 @@ export default function App() {
                             </div>
                             <span className="text-white text-xs font-bold">王校友 · Meta Ads Staff SDE (CMU 20 级)</span>
                             <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.5 rounded border border-cyan-500/30">
-                              已验证 @meta.com
+                              CMU 实验室同组
                             </span>
                           </div>
-                          <span className="text-[10px] text-slate-500 font-mono">2026-09-16 认证</span>
+                          <span className="text-[10px] text-slate-500 font-mono">2026-09-16 确认</span>
                         </div>
                         <div className="flex items-center gap-1.5 text-[10px] text-emerald-400">
-                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 系统设计优良</span>
-                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 沟通协作靠谱</span>
+                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 共同发表顶会 Workshop</span>
+                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 团队协作极强</span>
                         </div>
-                        <p className="text-xs text-slate-300">"CMU 实验室同组学弟，共同发表过顶会 Workshop 论文，工程执行力极强。"</p>
-                      </div>
-                    )}
-
-                    {vouchCount >= 3 && (
-                      <div className="p-3.5 rounded-2xl bg-slate-950/70 border border-emerald-500/30 space-y-1.5">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <div className="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-xs">
-                              陈
-                            </div>
-                            <span className="text-white text-xs font-bold">陈校友 · OpenAI Research Engineer (CMU 19 级)</span>
-                            <span className="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-500/30">
-                              满血第3票
-                            </span>
-                          </div>
-                          <span className="text-[10px] text-slate-500 font-mono">2026-09-17 认证</span>
-                        </div>
-                        <div className="flex items-center gap-1.5 text-[10px] text-emerald-400">
-                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 大模型基础设施</span>
-                          <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded border border-emerald-500/30">✓ 强烈推荐</span>
-                        </div>
-                        <p className="text-xs text-slate-300">"对分布式训练通信优化理解深刻，已在开源库完成 2 个重大 PR，强烈推荐进入工业界大厂！"</p>
+                        <p className="text-xs text-slate-300">"CMU 实验室同组学弟，核心系统的实验复现与基准测试均由其独立主导，工程执行力可靠。"</p>
                       </div>
                     )}
                   </div>
@@ -617,19 +590,19 @@ export default function App() {
                 <button
                   onClick={() => {
                     setIsFastTrack(false);
-                    setVouchCount((prev) => Math.min(3, prev + 1));
+                    setVouchCount((prev) => Math.min(2, prev + 1));
                   }}
-                  disabled={vouchCount >= 3 && !isFastTrack}
+                  disabled={vouchCount >= 2 && !isFastTrack}
                   className="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 disabled:opacity-40 text-white font-bold text-xs flex items-center gap-1.5 shadow transition-all active:scale-95"
                 >
                   <UserCheck className="w-3.5 h-3.5" />
-                  <span>模拟学长微信为 TA 点亮背书 (+1)</span>
+                  <span>模拟在职学长出具客观经历佐证 (+1)</span>
                 </button>
 
                 <button
                   onClick={() => {
                     setIsFastTrack(!isFastTrack);
-                    if (!isFastTrack) setVouchCount(3);
+                    if (!isFastTrack) setVouchCount(2);
                   }}
                   className={`px-4 py-2 rounded-xl font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 border ${
                     isFastTrack
@@ -638,7 +611,7 @@ export default function App() {
                   }`}
                 >
                   <Zap className="w-3.5 h-3.5 text-amber-400" />
-                  <span>{isFastTrack ? '已启用联盟理事直通车 (1抵3)' : '启用【联盟理事直通车】(1抵3)'}</span>
+                  <span>{isFastTrack ? '已启用分会工单核验 (1=1 同权)' : '启用【分会工单直通】(1=1 同权)'}</span>
                 </button>
 
                 <button
@@ -646,7 +619,7 @@ export default function App() {
                   className="px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs flex items-center gap-1.5 shadow transition-all active:scale-95 ml-auto"
                 >
                   <Share2 className="w-3.5 h-3.5" />
-                  <span>生成我的微信求背书卡片</span>
+                  <span>生成求经历佐证卡片</span>
                 </button>
 
                 <button
@@ -1117,10 +1090,10 @@ export default function App() {
 
             <div className="space-y-1 text-center">
               <span className="text-[11px] font-bold text-cyan-400 font-mono uppercase">
-                WeChat Vouch Card Preview
+                Experience Proof Invite Card
               </span>
-              <h3 className="text-lg font-bold text-white">专属校友求背书卡片</h3>
-              <p className="text-xs text-slate-400">分享至微信校友群或私发给在职学长学姐，点击即可 15 秒快速背书。</p>
+              <h3 className="text-lg font-bold text-white">专属校友经历佐证邀请卡片</h3>
+              <p className="text-xs text-slate-400">发给曾共同做过项目或共事的学长学姐，确认客观事实，进入置顶优先队列。</p>
             </div>
 
             {/* Mobile Card Styled Preview */}
@@ -1131,12 +1104,12 @@ export default function App() {
                     VI
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-white">VI AI 职引 · 校友信用背书邀请</div>
+                    <div className="text-xs font-bold text-white">VI AI 职引 · 校友项目经历佐证邀请</div>
                     <div className="text-[10px] text-slate-400">NACUAA 北美高校联盟认证生态</div>
                   </div>
                 </div>
                 <span className="text-[10px] bg-cyan-500/20 text-cyan-300 px-1.5 py-0.5 rounded font-mono">
-                  求助点亮 3/3
+                  优先加权佐证
                 </span>
               </div>
 
@@ -1153,14 +1126,14 @@ export default function App() {
               </div>
 
               <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-xs text-slate-300 italic">
-                “学长学姐好！我正在申请 VI AI 职引的名企内推资格，诚邀在职的前辈为我的专业硬核度与靠谱品质点亮信用背书，非常感谢您的提携！”
+                “学长学姐好！我正在申请 VI AI 职引的校友内推协作通道，诚邀曾共同做过项目或共事的前辈为我出具一份客观经历佐证（仅需确认事实，无连带风险），非常感谢您的提携！”
               </div>
 
               <div className="text-[11px] text-slate-400 space-y-1 bg-slate-900/60 p-2.5 rounded-xl">
-                <div className="text-slate-300 font-semibold">学长学姐微信打开可一键勾选背书：</div>
-                <div>✓ 编程与系统设计功底扎实</div>
-                <div>✓ 团队协作负责，值得信赖</div>
-                <div>✓ 愿意引荐进入我司/我组</div>
+                <div className="text-slate-300 font-semibold">学长学姐微信打开可一键确认客观事实：</div>
+                <div>✓ 共同参与过实际系统/项目研发</div>
+                <div>✓ 代码与工程素养真实严谨</div>
+                <div>✓ 建议内推人优先阅览此简历包</div>
               </div>
 
               <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between text-xs font-mono text-cyan-300">
