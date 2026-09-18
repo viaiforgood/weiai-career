@@ -8,17 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script>
-      // Shortlink Auto-Routing for vi.fyi
-      if (
-        window.location.hostname === 'r.vi.fyi' || 
-        window.location.hostname === 'v.vi.fyi' || 
-        window.location.hostname === 'refer.vi.fyi' ||
-        window.location.hostname === 'vouch.vi.fyi'
+      // Domain & Shortlink Auto-Routing
+      var host = window.location.hostname;
+      if (host === 'vivouch.weiai.ai' || host === 'vivouch.vi.fyi') {
+        window.location.replace('https://career.weiai.ai' + window.location.pathname + window.location.search);
+      } else if (
+        host === 'r.vi.fyi' || 
+        host === 'v.vi.fyi' || 
+        host === 'refer.vi.fyi' ||
+        host === 'vouch.vi.fyi'
       ) {
         window.location.replace('https://career.weiai.ai/?role=referrer' + (window.location.search ? '&' + window.location.search.slice(1) : ''));
-      } else if (window.location.hostname === 'c.vi.fyi' || window.location.hostname === 'career.vi.fyi') {
+      } else if (host === 'c.vi.fyi' || host === 'career.vi.fyi') {
         window.location.replace('https://career.weiai.ai/?role=seeker' + (window.location.search ? '&' + window.location.search.slice(1) : ''));
-      } else if (window.location.hostname.endsWith('vi.fyi')) {
+      } else if (host.endsWith('vi.fyi')) {
         window.location.replace('https://career.weiai.ai' + window.location.pathname + window.location.search);
       }
     </script>
