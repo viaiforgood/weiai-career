@@ -31,6 +31,18 @@ export async function onRequest(context) {
     return Response.redirect(`https://career.weiai.ai/?${search.toString()}`, 302);
   }
 
+  // 3.5 ViFound / Founders shortlinks (Redirect to ViFound platform)
+  if (
+    host === 'found.vi.fyi' ||
+    host === 'f.vi.fyi' ||
+    host === 'round.vi.fyi' ||
+    host === 'vc.vi.fyi' ||
+    host === 'vifound.vi.fyi'
+  ) {
+    const targetUrl = new URL(url.pathname + url.search, 'https://vifound.pages.dev');
+    return Response.redirect(targetUrl.toString(), 302);
+  }
+
   // 4. Any other vi.fyi short domains
   if (host.endsWith('vi.fyi') && host !== 'vi.fyi') {
     const targetUrl = new URL(url.pathname + url.search, 'https://career.weiai.ai');
