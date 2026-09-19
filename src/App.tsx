@@ -105,25 +105,39 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#050b18] text-slate-100 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-200">
       
-      {/* Top Notification Bar */}
-      <div className="bg-gradient-to-r from-indigo-900/60 via-purple-900/50 to-slate-900/60 border-b border-indigo-500/30 px-4 py-2 text-center text-xs text-indigo-200 flex items-center justify-center gap-2">
-        <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">
-          Closed Beta
-        </span>
-        <span>
-          ViVouch 校友举荐首期 · 唯爱AI公益基金会 × 北美高校联盟北加州分会 ×{' '}
+      {/* Top Notification Bar: The Trinity Matrix */}
+      <div className="bg-gradient-to-r from-[#070e22] via-[#0d1c3e] to-[#070e22] border-b border-indigo-500/30 px-4 py-2 text-xs text-indigo-200 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase">
+            三位一体生态
+          </span>
+          <span>
+            ViVouch 校友举荐 · 鉴其势 · 荐其才 · 创其业 · 纯公益互助
+          </span>
+        </div>
+        <div className="flex items-center gap-3 text-slate-300">
           <a
-            href="https://nacuaa.ai/en"
+            href="https://alumnisignal.com/zh-CN/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-white"
+            className="hover:text-cyan-300 transition-colors"
           >
-            北美高校联盟AI创业公益俱乐部
-          </a>{' '}
-          × 北美浙江大学校友会北卡分会 联合发起 · 纯公益互助
-        </span>
-        <span className="hidden sm:inline text-slate-500">|</span>
-        <span className="hidden sm:inline text-slate-400 font-mono text-[11px]">短链: c.vi.fyi (求职直通) · v.vi.fyi / r.vi.fyi (举荐协作)</span>
+            《校友鉴》深报
+          </a>
+          <span className="text-slate-600">|</span>
+          <span className="text-indigo-300 font-semibold bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/30">
+            《校友荐》求职 (Current)
+          </span>
+          <span className="text-slate-600">|</span>
+          <a
+            href="https://found.vi.fyi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-amber-300 transition-colors flex items-center"
+          >
+            《校友创》创投
+          </a>
+        </div>
       </div>
 
       {/* Main Navigation Header */}
