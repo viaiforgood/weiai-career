@@ -232,7 +232,7 @@ export default function App() {
             <span>以校友信任为基石 · 以具名举荐为桥梁</span>
             <span className="text-slate-600">|</span>
             <span className="text-slate-400 font-medium">
-              唯爱AI公益基金会 × 北美高校联盟北加州分会 ×{' '}
+              唯爱智能公益基金会 × 北美高校联盟北加州分会 ×{' '}
               <a
                 href="https://nacuaa.ai/en"
                 target="_blank"
