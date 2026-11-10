@@ -1,7 +1,7 @@
 {
   "name": "weiai-career",
   "version": "1.0.0",
-  "description": "ViVouch 校友举荐 - 北美高校校友具名举荐与内推协作平台 by VI AI Foundation, NACUAA NorCal, NACUAA AI Venture and Impact Club & ZJUAA NC.",
+  "description": "ViVouch 校友举荐 - 北美高校校友具名举荐与内推协作平台 by VI AI for Good Foundation & ZJUAA NC.",
   "homepage": "https://career.weiai.ai",
   "type": "module",
   "scripts": {
